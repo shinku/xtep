@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <title>特步</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <script src="js/utils/three.min.js"></script>
+    <script src="js/utils/tweenMax.min.js"></script>
+    <script src="js/utils/Monkey.min.js"></script>
+
+</head>
+<body>
+<div class="content">
+
+    <div class="page welcomepage" id="welcomepage">
+        <div class="pagecontent welcome" id="welcome">
+            <div class="welcome w1"></div>
+            <div class="welcome w2"></div>
+            <div class="welcome w3"></div>
+            <div class="welcome w4"></div>
+            <div class="welcome w5"></div>
+        </div>
+        <div class="pagecontent " id="welcomenew" style="display: none">
+            <div class="welcomenewbg"></div>
+            <div class="welcomenew wn1" id="wn1"></div>
+            <div class="welcomenew wn2" id="wn2"></div>
+            <div class="welcomenew wn3" id="wn3"></div>
+            <div class="welcomenew wn4" id="wn4"></div>
+            <div class="welcomenew wn5" id="wn5"></div>
+            <div class="welcomenew wn6" id="wn6"></div>
+
+            <div class="hand" id="hand" ></div>
+        </div>
+        <canvas class="pagecontent brokenwelcome"  id="canvas" style="display: none"></canvas>
+        <div class="scorllLip" id="scorllLip" style="display: none"></div>
+        <div class="logo"></div>
+    </div>
+    <div class="page videopage" id="videopage" style="display: none">
+        <div class="pageending"></div>
+        <div class="videocnotent" id="videocontent" style="z-index: 10">
+            <iframe src="video.html"  id="video1"></iframe>
+        </div>
+        <div class="logo"></div>
+
+    </div>
+
+</div>
+
+
+</body>
+<script src="index.min.js"></script>
+<script src="js/utils/borken.js"></script>
+<script>
+    document.onreadystatechange=function(){
+        if(document.readyState=='complete'){
+            console.log("init");
+            main.init();
+        };
+    }
+</script>
+</html>
